@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+      }
+
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        border-bottom: 1px solid grey;
+        padding: 10px;
+      }
+
+      form {
+        width: 600px;
+        border: 3px solid rgba(230, 230, 230, 0.445);
+        padding: 15px 50px 15px 50px;
+        margin: 0 auto;
+      }
+
+      .form-container {
+        padding: 10px;
+      }
+
+      .form-labels {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      .input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgba(182, 182, 182, 0.212);
+        padding-left: 10px;
+      }
+      .input-label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .submit-btn {
+        cursor: pointer;
+        width: 100%;
+        height: 35px;
+        margin-bottom: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+      }
+
+      .submit-btn:hover {
+        background-color: rgb(8, 99, 8);
+      }
+
+      .checkbox-container {
+        background-color: rgba(236, 236, 236, 0.911);
+        height: 50px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h1>Login Form</h1>
+      <div class="form-container">
+        <label class="form-labels">
+          <span class="input-label">Username</span>
+          <input
+            type="text"
+            class="input"
+            placeholder="Enter Username"
+            required
+          />
+        </label>
+        <label class="form-labels">
+          <span class="input-label">Password</span>
+          <input
+            type="password"
+            class="input"
+            placeholder="Enter Password"
+            required
+          />
+        </label>
+      </div>
+      <button type="submit" class="submit-btn">Login</button>
+      <div class="checkbox-container">
+        <label>
+          <input type="checkbox" />
+          <span>Remember me</span>
+        </label>
+        <a href="https://www.google.com/">Forgot Password?</a>
+      </div>
+    </form>
+  </body>
+</html>
