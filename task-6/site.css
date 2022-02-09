@@ -63,7 +63,7 @@ body {
 .page-header {
   padding: 21px 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: transparent;
+  background-color: #4c59fb;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -112,8 +112,7 @@ body {
   padding-top: 65px;
   padding-bottom: 50px;
   height: 700px;
-  background: center no-repeat
-    url(https://livedemo00.template-help.com/wt_52524/images/bg-1-1700x803.jpg);
+  background: center no-repeat url(./images/bg-1.jpeg);
 }
 
 .hero-title {
@@ -242,7 +241,7 @@ body {
   color: #404044;
 }
 .choose-us-section {
-  padding: 60px 0;
+  padding: 60px 0 210px 0;
   position: relative;
 }
 .section-container__reverse {
@@ -300,4 +299,97 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   margin-bottom: 10px;
+}
+.grey-section {
+  background: center no-repeat url(./images/bg-2.jpeg);
+}
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 90px 0;
+}
+.number {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  line-height: 0.8;
+  font-weight: 700;
+  letter-spacing: 0.017em;
+  color: var(--light-color);
+  margin-bottom: 7px;
+  text-align: center;
+}
+.number-text {
+  letter-spacing: 0.15em;
+  color: #b3bbc1;
+  font-family: "Poppins", sans-serif;
+}
+.options-section {
+  padding: 80px 0 90px;
+  text-align: center;
+  background: url(./images/bg-3.jpeg) center no-repeat;
+  background-size: cover;
+}
+.options-section .section-title {
+  margin-bottom: 15px;
+}
+.options-section .section-title::after {
+  display: none;
+}
+.options-cards {
+  display: flex;
+  margin: -15px;
+}
+.card-item {
+  width: 33.33333%;
+  background-color: #404044;
+  color: var(--light-color);
+  margin: 15px;
+  padding: 60px 55px 70px 55px;
+}
+.card-item__accent {
+  background-color: #505cfd;
+}
+.section-subtitle-block {
+  display: block;
+  margin-bottom: 15px;
+}
+.section-text-block {
+  display: block;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+.number-block {
+  display: block;
+  margin-bottom: 10px;
+}
+.section-subtitle-accent {
+  display: block;
+  padding: 3px 0 3px 0;
+  margin: 0 72px;
+  border-radius: 20px;
+  background-color: #48484c;
+  margin-bottom: 25px;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+.section-subtitle-accent__blue {
+  background-color: #626dfd;
+}
+.text-block {
+  display: block;
+  margin: 0;
+}
+.start-link {
+  display: block;
+  margin-top: 30px;
+  padding: 17px 35px;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #505cfd;
+  border-color: #505cfd;
+}
+.start-link__accent {
+  border: 1px solid var(--light-color);
 }
