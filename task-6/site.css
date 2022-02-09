@@ -63,7 +63,7 @@ body {
 .page-header {
   padding: 21px 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: #4c59fb;
+  background-color: transparent;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -112,7 +112,8 @@ body {
   padding-top: 65px;
   padding-bottom: 50px;
   height: 700px;
-  background: center no-repeat url(./images/bg-1.jpeg);
+  background: center no-repeat
+    url(https://livedemo00.template-help.com/wt_52524/images/bg-1-1700x803.jpg);
 }
 
 .hero-title {
@@ -241,7 +242,7 @@ body {
   color: #404044;
 }
 .choose-us-section {
-  padding: 60px 0 210px 0;
+  padding: 60px 0;
   position: relative;
 }
 .section-container__reverse {
@@ -300,6 +301,7 @@ body {
   letter-spacing: 0.16em;
   margin-bottom: 10px;
 }
+
 .grey-section {
   background: center no-repeat url(./images/bg-2.jpeg);
 }
@@ -487,3 +489,4 @@ body {
 .footer-positions-box {
   padding: 0 15px;
 }
+
