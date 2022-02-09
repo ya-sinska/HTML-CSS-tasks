@@ -346,7 +346,12 @@ body {
   color: var(--light-color);
   margin: 15px;
   padding: 60px 55px 70px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--light-color);
 }
+
 .card-item__accent {
   background-color: #505cfd;
 }
@@ -384,12 +389,100 @@ body {
 .start-link {
   display: block;
   margin-top: 30px;
+  width: 190px;
   padding: 17px 35px;
   border-radius: 30px;
   color: #ffffff;
   background-color: #505cfd;
   border-color: #505cfd;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+.start-link:hover {
+  background-color: #2c343b;
+  border-color: #2c343b;
 }
 .start-link__accent {
   border: 1px solid var(--light-color);
+}
+.section-slider {
+  padding: 80px 0 90px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.section-slider .section-title::after {
+  display: none;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px 30px 40px;
+}
+.image-box {
+  border-radius: 50%;
+  margin-right: 60px;
+  min-width: 216px;
+  max-width: 216px;
+  height: 216px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  align-self: center;
+}
+.image-box__item {
+  border-radius: 50%;
+}
+.section-text__slider {
+  text-align: start;
+  font-size: 18px;
+}
+.client-name {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.name {
+  position: relative;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #404044;
+  font-size: 18px;
+  padding-left: 100px;
+}
+.name::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  left: 0;
+  width: 60px;
+  height: 3px;
+
+  background-color: #505cfd;
+}
+.description {
+  padding-left: 100px;
+}
+.footer-section {
+  background: #404044;
+  color: #aab2b9;
+  font-size: 16px;
+}
+.footer-container {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-positions-box {
 }
