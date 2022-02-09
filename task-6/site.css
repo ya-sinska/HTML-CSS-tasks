@@ -63,7 +63,7 @@ body {
 .page-header {
   padding: 21px 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: #4c59fb;
+  background-color: transparent;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -112,7 +112,8 @@ body {
   padding-top: 65px;
   padding-bottom: 50px;
   height: 700px;
-  background: center no-repeat url(./images/bg-1.jpeg);
+  background: center no-repeat
+    url(https://livedemo00.template-help.com/wt_52524/images/bg-1-1700x803.jpg);
 }
 
 .hero-title {
@@ -241,7 +242,7 @@ body {
   color: #404044;
 }
 .choose-us-section {
-  padding: 60px 0 210px 0;
+  padding: 60px 0;
   position: relative;
 }
 .section-container__reverse {
@@ -299,190 +300,4 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   margin-bottom: 10px;
-}
-.grey-section {
-  background: center no-repeat url(./images/bg-2.jpeg);
-}
-.box-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 0 90px 0;
-}
-.number {
-  font-family: "Poppins", sans-serif;
-  font-size: 48px;
-  line-height: 0.8;
-  font-weight: 700;
-  letter-spacing: 0.017em;
-  color: var(--light-color);
-  margin-bottom: 7px;
-  text-align: center;
-}
-.number-text {
-  letter-spacing: 0.15em;
-  color: #b3bbc1;
-  font-family: "Poppins", sans-serif;
-}
-.options-section {
-  padding: 80px 0 90px;
-  text-align: center;
-  background: url(./images/bg-3.jpeg) center no-repeat;
-  background-size: cover;
-}
-.options-section .section-title {
-  margin-bottom: 15px;
-}
-.options-section .section-title::after {
-  display: none;
-}
-.options-cards {
-  display: flex;
-  margin: -15px;
-}
-.card-item {
-  width: 33.33333%;
-  background-color: #404044;
-  color: var(--light-color);
-  margin: 15px;
-  padding: 60px 55px 70px 55px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid var(--light-color);
-}
-
-.card-item__accent {
-  background-color: #505cfd;
-}
-.section-subtitle-block {
-  display: block;
-  margin-bottom: 15px;
-}
-.section-text-block {
-  display: block;
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--secondary-text-color);
-  margin-bottom: 20px;
-}
-.number-block {
-  display: block;
-  margin-bottom: 10px;
-}
-.section-subtitle-accent {
-  display: block;
-  padding: 3px 0 3px 0;
-  margin: 0 72px;
-  border-radius: 20px;
-  background-color: #48484c;
-  margin-bottom: 25px;
-  font-size: 12px;
-  letter-spacing: 0.15em;
-}
-.section-subtitle-accent__blue {
-  background-color: #626dfd;
-}
-.text-block {
-  display: block;
-  margin: 0;
-}
-.start-link {
-  display: block;
-  margin-top: 30px;
-  width: 190px;
-  padding: 17px 35px;
-  border-radius: 30px;
-  color: #ffffff;
-  background-color: #505cfd;
-  border-color: #505cfd;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.23em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: all 250ms linear;
-}
-.start-link:hover {
-  background-color: #2c343b;
-  border-color: #2c343b;
-}
-.start-link__accent {
-  border: 1px solid var(--light-color);
-}
-.section-slider {
-  padding: 80px 0 90px;
-  text-align: center;
-  background-color: #f8f8f8;
-}
-.section-slider .section-title::after {
-  display: none;
-}
-.slider {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px 20px 30px 40px;
-}
-.image-box {
-  border-radius: 50%;
-  margin-right: 60px;
-  min-width: 216px;
-  max-width: 216px;
-  height: 216px;
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 50%;
-  align-self: center;
-}
-.image-box__item {
-  border-radius: 50%;
-}
-.section-text__slider {
-  text-align: start;
-  font-size: 18px;
-}
-.client-name {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-}
-.name {
-  position: relative;
-  display: block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: #404044;
-  font-size: 18px;
-  padding-left: 100px;
-}
-.name::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  left: 0;
-  width: 60px;
-  height: 3px;
-
-  background-color: #505cfd;
-}
-.description {
-  padding-left: 100px;
-}
-.footer-section {
-  background: #404044;
-  color: #aab2b9;
-  font-size: 16px;
-}
-.footer-container {
-  padding: 60px 0;
-  display: flex;
-  justify-content: space-between;
-}
-.footer-positions-box {
 }
