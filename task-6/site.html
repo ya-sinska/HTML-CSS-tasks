@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital@1&family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./site.css" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <header class="page-header">
@@ -163,7 +163,7 @@
         <div class="card-item">
           <span class="section-subtitle section-subtitle-block">STARTER</span>
           <span class="section-text section-text-block">Perfect for startups</span>
-          <span class="number number-block">$39</span>
+          <span class="number number-block"> <sup>$</sup>39</span>
           <span class="section-subtitle section-subtitle-accent">MONTHLY</span>
           <span class="section-text text-block">Business Strategy</span>
           <span class="section-text text-block">Financial Advisory</span>
@@ -172,7 +172,7 @@
         <div class="card-item card-item__accent">
           <span class="section-subtitle section-subtitle-block">PROFESSIONAL</span>
           <span class="section-text section-text-block">Designed for medium businesses</span>
-          <span class="number number-block">$69</span>
+          <span class="number number-block"><sup>$</sup>69</span>
           <span class="section-subtitle section-subtitle-accent section-subtitle-accent__blue ">MONTHLY</span>
           <span class="section-text text-block">Operations Management</span>
           <span class="section-text text-block">Strategic Planning</span>
@@ -181,7 +181,7 @@
         <div class="card-item">
           <span class="section-subtitle section-subtitle-block">PREMIUM</span>
           <span class="section-text section-text-block">For international enterprises</span>
-          <span class="number number-block">$89</span>
+          <span class="number number-block"><sup>$</sup>89</span>
           <span class="section-subtitle section-subtitle-accent">MONTHLY</span>
           <span class="section-text text-block">Quality Engineering</span>
           <span class="section-text text-block">Marketing Consulting</span>
@@ -189,8 +189,6 @@
         </div>
         </div>        
         </div>
-
-
       </section>
       <section class="section-slider">
         <div class="container">
@@ -216,7 +214,7 @@
     </main>
     <footer class="footer-section">
       <div class="container footer-container">
-        <div class="footer-positions-box">
+        <div class="footer-positions-box footer-positions-box-first">
           <a>
             <img
               src="./images/logo-default.png"
@@ -227,20 +225,21 @@
           <p class="some-text">СonsultBiz provides a full range of business consulting & advisory services to small, medium, and international companies worldwide. We use innovations and experience to drive your success.
           </p>
         </div>
-        <div class="footer-positions-box">
-          <span>CONTACT INFO</span>
-          <address>
-            <p>2164 Wall St, New York NY 10122, USA</p>
+        <div class="footer-positions-box footer-positions-box-second">
+          <span class="footer-title">CONTACT INFO</span>
+          <address class="adress-list">
+            <p>2164 Wall St, New York </p>
+            <p>NY 10122, USA</p>
             <a href="mailto:#">info@demolink.org</a>
             <a href="tel:#">+1 800 123 45 67</a>
-            <p>Mon-Thu:9:30 AM - 9:00 PM</p>
-            <p>Fri:10:00 AM - 9:00 PM</p>
-            <p>Sat:10:00 AM - 3:00 PM</p>
+            <p>Mon-Thu: <span class="time-accent">9:30 AM - 9:00 PM</span></p>
+            <p>Fri: <span class="time-accent">10:00 AM - 9:00 PM</span></p>
+            <p>Sat: <span class="time-accent">10:00 AM - 3:00 PM</span></p>
           </address>
         </div>
-        <div class="footer-positions-box">
-          <span>QUICK LINKS</span>
-          <ul>
+        <div class="footer-positions-box footer-positions-box-third">
+          <span class="footer-title">QUICK LINKS</span>
+          <ul class="links-list">
             <li><a href="">Home</a></li>
             <li><a href="">About us</a></li>
             <li><a href="">Services</a></li>
@@ -248,13 +247,13 @@
             <li><a href="">Contacts</a></li>
           </ul>
         </div>
-        <div class="footer-positions-box">
-          <span>NEWSLETTER</span>
+        <div class="footer-positions-box footer-positions-box-four">
+          <span class="footer-title">NEWSLETTER</span>
           <form >
-            <input type="text" placeholder="your email adress">
-            <button type="submit">SING UP</button>
+            <input class="form-input" type="text" placeholder="Your email adress">
+            <button class="start-link footer-form-btn" type="submit">SING UP</button>
           </form>
-     
+          <p class="form-text">Be the first to find out about our latest news, updates, and special offers.</p>
           
         </div>
 

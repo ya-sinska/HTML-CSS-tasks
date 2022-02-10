@@ -1,0 +1,68 @@
+:root {
+  /* colors */
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #888888;
+  --accent-color: #505cfd;
+  --section-title-color: #404044;
+  --btn-hover: #2c343b;
+  --light-color: #fff;
+
+  /* text */
+  --primary-font-size: 14px;
+  --primary-line-height: 2.14286;
+  --secondary-font-size: 12px;
+  --section-title-font-size: 36px;
+  --section-title-line-height: 1.33333;
+}
+* {
+  box-sizing: border-box;
+}
+/* Класи утиліти */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14286;
+  margin: 0;
+  color: var(--secondary-text-color);
+}
