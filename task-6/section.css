@@ -4,7 +4,8 @@
   padding-top: 65px;
   padding-bottom: 50px;
   height: 700px;
-  background: center no-repeat url(./images/bg-1.jpeg);
+  background: center no-repeat
+    url(https://livedemo00.template-help.com/wt_52524/images/bg-1-1700x803.jpg);
 }
 
 .hero-title {
@@ -133,7 +134,7 @@
   color: #404044;
 }
 .choose-us-section {
-  padding: 60px 0 210px 0;
+  padding: 60px 0;
   position: relative;
   overflow: hidden;
 }
@@ -193,6 +194,7 @@
   letter-spacing: 0.16em;
   margin-bottom: 10px;
 }
+
 .grey-section {
   background: center no-repeat url(./images/bg-2.jpeg);
 }
