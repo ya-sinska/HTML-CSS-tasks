@@ -1,3 +1,4 @@
+/* @import url(./basic.css); */
 :root {
   /* colors */
   --primary-text-color: #ffffff;
@@ -9,13 +10,312 @@
   --background-color-light: #f2f2f2;
   --background-footer: #464646;
 }
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 .page-header {
+  padding-top: 30px;
   background-color: var(--background-color-light);
+}
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.header-form {
+  min-width: 50%;
+  display: flex;
+}
+.form-input {
+  color: var(--dark-texy-color);
+  background-color: transparent;
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 20px;
+  min-width: 86%;
+  height: 35px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+.form-btn {
+  border: none;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+  width: 14%;
+  background-color: var(--accent-color);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 0 4px 4px 0;
+  height: 35px;
+  color: #fff;
+  transition: background-color 250ms linear;
+}
+.form-btn:hover,
+.form-btn:focus {
+  background-color: var(--btn-hover);
+}
+.tel {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--dark-texy-color);
+  text-decoration: none;
+  transition: color 250ms linear;
+}
+.tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+}
+.second-line {
+  display: flex;
+}
+.categories {
+  width: 20%;
+  min-height: 60px;
+  padding: 16px 17px 14px;
+  margin-right: 30px;
+  background-color: var(--accent-color);
+  font-size: 19px;
+  line-height: 24px;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  min-height: 60px;
+  padding: 16px 17px 14px;
+  background: #464646;
+  border-radius: 3px 0 0 0;
+}
+.navigation-item {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  transition: color 250ms linear;
+}
+.navigation-item:hover {
+  color: var(--accent-color);
+}
+.navigation-item:not(:first-child) {
+  margin-left: 20px;
+}
+.basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  min-height: 60px;
+  padding: 16px 17px 14px;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: color 250ms linear;
+}
+.basket:hover {
+  color: var(--secondary-text-color);
+}
+.wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* background-color: tomato; */
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.box1 {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: center/contain no-repeat var(--background-color-light)
+    url(./images/slide-1-870x345.jpeg);
+  height: 378px;
+}
+.text-content {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.text-content span {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+.text-content span span {
+  font-weight: 400;
+}
+.text-content p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: var(--secondary-text-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.text-content a {
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 14px;
+  color: var(--light-color);
+  background-color: var(--background-footer);
+  border-radius: 4px;
+  padding: 13px 30px 12px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+.text-content a:hover {
+  background-color: var(--accent-color);
+}
+.box2 {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--background-color-light);
+  cursor: pointer;
+  border: 5px solid transparent;
+  transition: border 250ms linear;
+}
+.box2:hover {
+  border: 5px solid #9de4fb;
+}
+.box2 div {
+  position: absolute;
+  top: 15%;
+  left: 20px;
+}
+.box2 span {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--dark-texy-color);
+}
+.box2 span span {
+  font-weight: 400;
+}
+.box2 a {
+  display: block;
+  margin-top: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  text-decoration: underline;
+  color: var(--dark-texy-color);
+  transition: color 250ms linear;
+}
+.box2 a:hover {
+  color: var(--accent-color);
+}
+.box3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 10% 20px 0 20px;
+  background-color: var(--accent-color);
+  border: 5px solid transparent;
+  transition: border 250ms linear;
+}
+.box3:hover {
+  border: 5px solid #9de4fb;
+}
+.box3 a span {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--light-color);
+}
+.box3 a span span {
+  font-weight: 700;
+}
+.box4 {
+  position: relative;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--background-color-light);
+  border: 5px solid transparent;
+  transition: border 250ms linear;
+}
+.box4:hover {
+  border: 5px solid #9de4fb;
+}
+.accent-percent {
+  display: block;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+.product-name {
+  display: block;
+}
+.box4 a div {
+  position: absolute;
+  top: 15%;
+  left: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--dark-texy-color);
+}
+
+.box5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: var(--background-color-light);
+  padding: 10px 22px;
+  font: 400 15px/25px "Ubuntu", sans-serif;
+  color: #2f2f2f;
+}
+.box6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.box7 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.box8 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.box6,
+.box7,
+.box8 {
+  color: var(--secondary-text-color);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  border: 1px solid var(--background-color-light);
+  padding: 15px 20px;
+}
+.box6 img,
+.box7 img,
+.box8 img {
+  cursor: pointer;
 }
