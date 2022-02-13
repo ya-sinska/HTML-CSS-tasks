@@ -44,6 +44,11 @@
 .form-btn:focus {
   background-color: var(--btn-hover);
 }
+.fa-phone {
+  margin-right: 10px;
+  height: 20px;
+  color: var(--accent-color);
+}
 .tel {
   font-size: 21px;
   line-height: 30px;
@@ -79,7 +84,15 @@
   background: #464646;
   border-radius: 3px 0 0 0;
 }
+.fa-house,
+.fa-star,
+.fa-user-lock,
+.fa-user,
+.fa-circle-check {
+  color: var(--accent-color);
+}
 .navigation-item {
+  margin-left: 10px;
   font-size: 14px;
   font-weight: 300;
   color: #fff;
@@ -89,7 +102,18 @@
   color: var(--accent-color);
 }
 .navigation-item:not(:first-child) {
-  margin-left: 20px;
+  margin-right: 20px;
+}
+.fa-basket-shopping,
+.fa-chevron-down {
+  color: var(--light-color);
+  height: 20px;
+  margin-right: 10px;
+  transition: color 250ms linear;
+}
+.fa-chevron-down {
+  margin-right: 0;
+  margin-left: 15px;
 }
 .basket {
   display: flex;
@@ -107,5 +131,11 @@
   transition: color 250ms linear;
 }
 .basket:hover {
+  color: var(--secondary-text-color);
+}
+.basket:hover .fa-basket-shopping {
+  color: var(--secondary-text-color);
+}
+.basket:hover .fa-chevron-down {
   color: var(--secondary-text-color);
 }
