@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>My Now Amazing Webpage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .your-class div {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="your-class">
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Slick slider -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Инициализация слайдера -->
+    <script>
+      $(".your-class").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        adaptiveHeight: true,
+        arrows: false,
+        dots: true,
+      });
+    </script>
+  </body>
+</html>

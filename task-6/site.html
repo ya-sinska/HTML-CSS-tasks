@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +13,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./main.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/6f7d10c188.js" crossorigin="anonymous"></script> 
   </head>
   <body>
     <header class="page-header">
@@ -39,8 +48,10 @@
             <span class="hero-title__biger">best</span>
             <span class="hero-title__big">Solutions.</span>
           </h1>
+          <img class="decor-image" src="./images/decor-image-1.png" alt="flower">
           <p class="hero-slogan">Fresh Ideas for Your Business</p>
-          <a href="#about-section" class="next-section-link"> </a>
+          <a href="#about-section" class="next-section-link">
+            <i class="fa-solid fa-angle-down"></i> </a>
         </div>
       </section>
       <section id="about-section" class="about-section">
@@ -95,31 +106,42 @@
             </p>
             <ul class="section-list list">
               <li class="list-item">
-                <h3 class="item-title">INNOVATIVE SOLUTIONS</h3>
-                <p class="item-text">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div class="list-item-text">
+                  <h3 class="item-title">INNOVATIVE SOLUTIONS</h3>
+                  <p class="item-text">
                   Our services and solutions are built on business innovations.
-                </p>
+                  </p>
+                </div>
               </li>
               <li class="list-item">
-                <h3 class="item-title">STRATEGIC THINKING</h3>
-                <p class="item-text">
+                <i class="fa-solid fa-bullseye"></i>
+                <div class="list-item-text">
+                 <h3 class="item-title">STRATEGIC THINKING</h3>
+                  <p class="item-text">
                   СonsultBiz works strategically to forge the best path for your
                   business.
-                </p>
+                  </p>
+                </div>
               </li>
               <li class="list-item">
-                <h3 class="item-title">EXPERIENCED TEAM</h3>
-                <p class="item-text">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <div class="list-item-text">
+                  <h3 class="item-title">EXPERIENCED TEAM</h3>
+                  <p class="item-text">
                   We employ the best consultants with more than 10 years of
                   experience.
-                </p>
+                  </p>
               </li>
               <li class="list-item">
-                <h3 class="item-title">CREATIVE APPROACH</h3>
-                <p class="item-text">
+                <i class="fa-solid fa-handshake"></i>
+                <div class="list-item-text">
+                  <h3 class="item-title">CREATIVE APPROACH</h3>
+                  <p class="item-text">
                   Every project we work on is based on the creative solutions of
                   any issues.
-                </p>
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -128,18 +150,22 @@
       <section class="grey-section">
         <div class="container box-container">
           <div class="counter-box">
+            <i class="fa-solid fa-clock"></i>
             <div class="number">2007</div>
             <div class="number-text">YEAR OF ESTABLISHMENT</div>
           </div>
           <div class="counter-box">
+            <i class="fa-solid fa-folder-open"></i>
             <div class="number">547</div>
             <div class="number-text">SUCCESSFUL PROJECTS</div>
           </div>
           <div class="counter-box">
+            <i class="fa-solid fa-user-group"></i>
             <div class="number">45+</div>
             <div class="number-text">GLOBAL PARTNERS</div>
           </div>
           <div class="counter-box">
+            <i class="fa-solid fa-users-gear"></i>
             <div class="number">1500</div>
             <div class="number-text">TEAM MEMBERS</div>
           </div>
@@ -197,18 +223,47 @@
             <span class="section-title__accent">About Us</span>
           </h2>
           <div class="slider">
+          <div class="slider-page">
             <div class="image-box">
               <img class="image-box__item" src="./images/user-1.jpeg" alt="client" width="216" height="108">
             </div>
             <div class="client-name">
-            <p class="section-text section-text__slider">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, neque! Et sequi, culpa numquam, magni placeat sapiente eius nemo voluptate temporibus quia repellat porro suscipit. Voluptatum modi sed ducimus vitae?</p>
-            <span class="name">Heather Parry</span>
-            <span class="description">Regular client</span>
+              <p class="section-text section-text__slider">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, neque! Et sequi, culpa numquam, magni placeat sapiente eius nemo voluptate temporibus quia repellat porro suscipit. Voluptatum modi sed ducimus vitae?</p>
+              <span class="name">Heather Parry</span>
+              <span class="description">Regular client</span>
             </div>
-            </div>
-           
           </div>
-          
+          <div class="slider-page">
+            <div class="image-box">
+              <img class="image-box__item" src="./images/user-1.jpeg" alt="client" width="216" height="108">
+            </div>
+            <div class="client-name">
+              <p class="section-text section-text__slider">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, neque! Et sequi, culpa numquam, magni placeat sapiente eius nemo voluptate temporibus quia repellat porro suscipit. Voluptatum modi sed ducimus vitae?</p>
+              <span class="name">Heather Parry</span>
+              <span class="description">Regular client</span>
+            </div>
+          </div>
+          <div class="slider-page">
+            <div class="image-box">
+              <img class="image-box__item" src="./images/user-1.jpeg" alt="client" width="216" height="108">
+            </div>
+            <div class="client-name">
+              <p class="section-text section-text__slider">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, neque! Et sequi, culpa numquam, magni placeat sapiente eius nemo voluptate temporibus quia repellat porro suscipit. Voluptatum modi sed ducimus vitae?</p>
+              <span class="name">Heather Parry</span>
+              <span class="description">Regular client</span>
+            </div>
+          </div>
+          <div class="slider-page">
+            <div class="image-box">
+              <img class="image-box__item" src="./images/user-1.jpeg" alt="client" width="216" height="108">
+            </div>
+            <div class="client-name">
+              <p class="section-text section-text__slider">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, neque! Et sequi, culpa numquam, magni placeat sapiente eius nemo voluptate temporibus quia repellat porro suscipit. Voluptatum modi sed ducimus vitae?</p>
+              <span class="name">Heather Parry</span>
+              <span class="description">Regular client</span>
+            </div>
+          </div>    
+          </div>                
         </div>
       </section> 
     </main>
@@ -258,6 +313,20 @@
         </div>
 
       </div>
-    </footer>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Slick slider -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Инициализация слайдера -->
+    <script>
+      $(".slider").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        adaptiveHeight: true,
+        arrows: false,
+        dots: true,
+      });
+    </script>
   </body>
 </html>
