@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+h1 {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px white;
+  text-align: center;
+  margin-top: 100px;
+}
+.apple-box {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 208px;
+  height: 198px;
+  border-radius: 35% 35% 41% 41% / 42% 42% 75% 75%;
+}
+.apple-box:hover {
+  animation: runApple 3000ms linear 5300ms forwards;
+}
+.apple {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 208px;
+  height: 198px;
+  border-radius: 30%;
+}
+.apple:hover {
+  animation: letDoApple 3000ms linear forwards;
+}
+.apple:hover.apple::before {
+  animation: letDoLeaf 2000ms linear 3100ms forwards;
+}
+
+.apple:hover.apple::after {
+  animation: letDoAm 2000ms linear 3100ms forwards;
+}
+.apple::before {
+  opacity: 0;
+  content: "";
+  background-color: white;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin: -51px 0 0 100px;
+  border-radius: 100px 0;
+  z-index: 5;
+}
+.apple::after {
+  opacity: 0;
+  content: "";
+  background-color: black;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin: 28px 0 0 174px;
+  border-radius: 50%;
+  z-index: 4;
+  box-shadow: -127px -109.5px 0 black, -118px -107px 0 #000,
+    -115.5px -102.5px 0 black, -105.5px -109.5px 0 black,
+    -105px -109.5px 0 #000000, -129px 166px 0 black, -107.5px 166px 0 black,
+    -119px 161px 0 black;
+}
+
+@keyframes letDoApple {
+  0% {
+    border-radius: 30%;
+  }
+
+  50% {
+    border-radius: 35% 35% 41% 41%;
+  }
+
+  100% {
+    border-radius: 35% 35% 41% 41% / 42% 42% 75% 75%;
+  }
+}
+@keyframes letDoLeaf {
+  0% {
+    transform: scaleY(0);
+    border-radius: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: scaleY(0.25);
+    border-radius: 30px 0;
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: scaleY(0.5);
+    border-radius: 50px 0;
+    opacity: 0.5;
+  }
+  70% {
+    transform: scaleY(0.75);
+    border-radius: 70px 0;
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: scaleY(1);
+    border-radius: 100px 0;
+    opacity: 1;
+  }
+}
+@keyframes letDoAm {
+  0% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: -127px -109.5px 0 black, -118px -107px 0 #000,
+      -115.5px -102.5px 0 black, -105.5px -109.5px 0 black,
+      -105px -109.5px 0 #000000, -129px 166px 0 black, -107.5px 166px 0 black,
+      -119px 161px 0 black;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes runApple {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
