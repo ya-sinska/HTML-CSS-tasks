@@ -19,7 +19,20 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="header-btn__mobile">
+        <button
+          class="header-btn-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <button class="header-btn-menu">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+      <div class="container page-header-container">
         <div class="first-line">
           <a href="" class="header-logo-link">
             <img
@@ -41,19 +54,28 @@
           <div class="categories">
             <span>Categories</span>
           </div>
-          <nav class="navigation">
-            <i class="fa-solid fa-house"></i>
-            <a href="#" class="navigation-item">Home</a>
-            <i class="fa-solid fa-star"></i>
-            <a href="#" class="navigation-item">Wish List (0)</a>
-            <i class="fa-solid fa-user-lock"></i>
-            <a href="#" class="navigation-item">My Account</a>
-            <i class="fa-solid fa-user"></i>
-            <a href="#" class="navigation-item">Log In</a>
-            <i class="fa-solid fa-circle-check"></i>
-            <a href="#" class="navigation-item">Checkout</a>
+          <nav class="navigation js-menu-container" id="mobile-menu">
+            <div class="navigation-box">
+              <i class="fa-solid fa-house"></i>
+              <a href="#" class="navigation-item">Home</a>
+            </div>
+            <div class="navigation-box">
+              <i class="fa-solid fa-star"></i>
+              <a href="#" class="navigation-item">Wish List (0)</a>
+            </div>
+            <div class="navigation-box">
+              <i class="fa-solid fa-user-lock"></i>
+              <a href="#" class="navigation-item">My Account</a>
+            </div>
+            <div class="navigation-box">
+              <i class="fa-solid fa-user"></i>
+              <a href="#" class="navigation-item">Log In</a>
+            </div>
+            <div class="navigation-box">
+              <i class="fa-solid fa-circle-check"></i>
+              <a href="#" class="navigation-item">Checkout</a>
+            </div>
           </nav>
-
           <div class="basket">
             <i class="fa-solid fa-basket-shopping"></i>
             <span>0 item(s)</span>
@@ -230,5 +252,28 @@
         </p>
       </div>
     </footer>
+    <script>
+      (() => {
+        const mobileMenu = document.querySelector(".js-menu-container");
+        const openMenuBtn = document.querySelector(".js-open-menu");
+
+        const toggleMenu = (e) => {
+          const isMenuOpen =
+            openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+          openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+          mobileMenu.classList.toggle("is-open");
+        };
+        openMenuBtn.addEventListener("click", toggleMenu);
+
+        // Закрываем мобильное меню на более широких экранах
+        // в случае изменения ориентации устройства.
+        window
+          .matchMedia("(min-width: 768px)")
+          .addEventListener("change", (e) => {
+            if (!e.matches) return;
+            mobileMenu.classList.remove("is-open");
+          });
+      })();
+    </script>
   </body>
 </html>
