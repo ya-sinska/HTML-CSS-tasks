@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital@1&family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./site.css" />
+    <link rel="stylesheet" href="./main.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/6f7d10c188.js" crossorigin="anonymous"></script> 
   </head>
   <body>
     <header class="page-header">
@@ -39,8 +48,10 @@
             <span class="hero-title__biger">best</span>
             <span class="hero-title__big">Solutions.</span>
           </h1>
+          <img class="decor-image" src="./images/decor-image-1.png" alt="flower">
           <p class="hero-slogan">Fresh Ideas for Your Business</p>
-          <a href="#about-section" class="next-section-link"> </a>
+          <a href="#about-section" class="next-section-link">
+            <i class="fa-solid fa-angle-down"></i> </a>
         </div>
       </section>
       <section id="about-section" class="about-section">
@@ -95,36 +106,235 @@
             </p>
             <ul class="section-list list">
               <li class="list-item">
-                <h3 class="item-title">INNOVATIVE SOLUTIONS</h3>
-                <p class="item-text">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div class="list-item-text">
+                  <h3 class="item-title">INNOVATIVE SOLUTIONS</h3>
+                  <p class="item-text">
                   Our services and solutions are built on business innovations.
-                </p>
+                  </p>
+                </div>
               </li>
               <li class="list-item">
-                <h3 class="item-title">STRATEGIC THINKING</h3>
-                <p class="item-text">
+                <i class="fa-solid fa-bullseye"></i>
+                <div class="list-item-text">
+                 <h3 class="item-title">STRATEGIC THINKING</h3>
+                  <p class="item-text">
                   СonsultBiz works strategically to forge the best path for your
                   business.
-                </p>
+                  </p>
+                </div>
               </li>
               <li class="list-item">
-                <h3 class="item-title">EXPERIENCED TEAM</h3>
-                <p class="item-text">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <div class="list-item-text">
+                  <h3 class="item-title">EXPERIENCED TEAM</h3>
+                  <p class="item-text">
                   We employ the best consultants with more than 10 years of
                   experience.
-                </p>
+                  </p>
+                  </div>
               </li>
               <li class="list-item">
-                <h3 class="item-title">CREATIVE APPROACH</h3>
-                <p class="item-text">
+                <i class="fa-solid fa-handshake"></i>
+                <div class="list-item-text">
+                  <h3 class="item-title">CREATIVE APPROACH</h3>
+                  <p class="item-text">
                   Every project we work on is based on the creative solutions of
                   any issues.
-                </p>
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
+      <section class="grey-section">
+        <div class="container box-container">
+          <div class="counter-box">
+            <i class="fa-solid fa-clock"></i>
+            <div class="number">2007</div>
+            <div class="number-text">YEAR OF ESTABLISHMENT</div>
+          </div>
+          <div class="counter-box">
+            <i class="fa-solid fa-folder-open"></i>
+            <div class="number">547</div>
+            <div class="number-text">SUCCESSFUL PROJECTS</div>
+          </div>
+          <div class="counter-box">
+            <i class="fa-solid fa-user-group"></i>
+            <div class="number">45+</div>
+            <div class="number-text">GLOBAL PARTNERS</div>
+          </div>
+          <div class="counter-box">
+            <i class="fa-solid fa-users-gear"></i>
+            <div class="number">1500</div>
+            <div class="number-text">TEAM MEMBERS</div>
+          </div>
+        </div>
+      </section>
+      <section class="options-section">
+        <div class="container">
+          <span class="section-subtitle">PRICING OPTIONS</span>
+          <h2 class="section-title">
+            Find The Perfect Plan For
+            <span class="section-title section-title__accent"
+              >Your Business</span
+            >
+          </h2>
+          <p class="section-text">
+            We offer three different pricing plans that completely cover the
+            needs of our clients. Feel free to select a </br> preferable plan or learn
+            more about each of them below.
+          </p>
+          <div class="options-cards">
+            <div class="card-item">
+              <span class="section-subtitle section-subtitle-block">STARTER</span>
+              <span class="section-text section-text-block">Perfect for startups</span>
+              <span class="number number-block"> <sup>$</sup>39</span>
+              <span class="section-subtitle section-subtitle-accent">MONTHLY</span>
+              <span class="section-text text-block">Business Strategy</span>
+              <span class="section-text text-block">Financial Advisory</span>
+              <a class="start-link" href="#">GET STARTED</a>
+            </div>
+            <div class="card-item card-item__accent">
+              <span class="section-subtitle section-subtitle-block">PROFESSIONAL</span>
+              <span class="section-text section-text-block">Designed for medium businesses</span>
+              <span class="number number-block"><sup>$</sup>69</span>
+              <span class="section-subtitle section-subtitle-accent section-subtitle-accent__blue ">MONTHLY</span>
+              <span class="section-text text-block">Operations Management</span>
+              <span class="section-text text-block">Strategic Planning</span>
+              <a class="start-link start-link__accent" href="">GET STARTED</a>
+            </div>
+            <div class="card-item">
+              <span class="section-subtitle section-subtitle-block">PREMIUM</span>
+              <span class="section-text section-text-block">For international enterprises</span>
+              <span class="number number-block"><sup>$</sup>89</span>
+              <span class="section-subtitle section-subtitle-accent">MONTHLY</span>
+              <span class="section-text text-block">Quality Engineering</span>
+              <span class="section-text text-block">Marketing Consulting</span>
+              <a class="start-link" href="#">GET STARTED</a>
+            </div>
+          </div>        
+        </div>
+      </section>
+      <section class="section-slider">
+        <div class="container">
+          <span class="section-subtitle">TESTIMONIALS</span>
+          <h2 class="section-title"> What People Say
+            <span class="section-title__accent">About Us</span>
+          </h2>
+          <div class="slider">
+            <div>
+              <div class="slider-page">
+                <div class="image-box">
+                  <img class="image-box__item" src="./images/user-1.jpeg" alt="client" width="216" height="108">
+                </div>
+                <div class="client-name">
+                  <p class="section-text section-text__slider">I was impressed by the quality of what your specialists did. They quickly found out what was the main problem of my company and helped me form a correct strategy, which worked perfectly and set my business on the right path.</p>
+                  <span class="name">Heather Parry</span>
+                  <span class="description">Regular client</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slider-page">
+                <div class="image-box">
+                  <img class="image-box__item" src="./images/user-2-216x216.jpeg" alt="client" width="216" height="108">
+                </div>
+                <div class="client-name">
+                  <p class="section-text section-text__slider">I appreciate what you’ve done to help my small company develop and thrive in that market niche that we specialize in. Your business consulting experts are the best in the whole industry and I’m going to recommend you to my partners!</p>
+                  <span class="name">Donald Hughes</span>
+                  <span class="description">Regular client</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slider-page">
+                <div class="image-box">
+                  <img class="image-box__item" src="./images/user-3-216x216.jpeg" alt="client" width="216" height="108">
+                </div>
+                <div class="client-name">
+                  <p class="section-text section-text__slider">My cooperation with your team helped me understand that you really care about your clients – it was proved by a lot of positive reviews already – and that's why I chose you. Thank you for a great job, you are true professionals!</p>
+                  <span class="name">Anthony Parker</span>
+                  <span class="description">Regular client</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slider-page">
+                <div class="image-box">
+                  <img class="image-box__item" src="./images/user-4-216x216.jpeg" alt="client" width="216" height="108">
+                </div>
+                <div class="client-name">
+                  <p class="section-text section-text__slider">Two years after СonsultBiz’s involvement, we are remarkably successful and the leader in served markets. This brought industry knowledge, best practices, and real-world solutions to the intricate challenges we faced.</p>
+                  <span class="name">Jennifer Coleman</span>
+                  <span class="description">Regular client</span>
+                </div>
+              </div>
+            </div>    
+          </div>                
+        </div>
+      </section> 
     </main>
+    <footer class="footer-section">
+      <div class="container footer-container">
+        <div class="footer-positions-box footer-positions-box-first">
+          <a>
+            <img
+              src="./images/logo-default.png"
+              alt="logo"
+              class="logo-link__image"
+            />
+          </a>
+          <p class="some-text">СonsultBiz provides a full range of business consulting & advisory services to small, medium, and international companies worldwide. We use innovations and experience to drive your success.
+          </p>
+        </div>
+        <div class="footer-positions-box footer-positions-box-second">
+          <span class="footer-title">CONTACT INFO</span>
+          <address class="adress-list">
+            <p>2164 Wall St, New York </p>
+            <p>NY 10122, USA</p>
+            <a href="mailto:nfo@demolink.org">info@demolink.org</a>
+            <a href="tel:+18001234567">+1 800 123 45 67</a>
+            <p>Mon-Thu: <span class="time-accent">9:30 AM - 9:00 PM</span></p>
+            <p>Fri: <span class="time-accent">10:00 AM - 9:00 PM</span></p>
+            <p>Sat: <span class="time-accent">10:00 AM - 3:00 PM</span></p>
+          </address>
+        </div>
+        <div class="footer-positions-box footer-positions-box-third">
+          <span class="footer-title">QUICK LINKS</span>
+          <ul class="links-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-positions-box footer-positions-box-four">
+          <span class="footer-title">NEWSLETTER</span>
+          <form >
+            <input class="form-input" type="text" placeholder="Your email adress">
+            <button class="start-link footer-form-btn" type="submit">SING UP</button>
+          </form>
+          <p class="form-text">Be the first to find out about our latest news, updates, and special offers.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Slick slider -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Инициализация слайдера -->
+    <script>
+      $(".slider").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        adaptiveHeight: true,
+        arrows: false,
+        dots: true,
+      });
+    </script>
   </body>
 </html>
