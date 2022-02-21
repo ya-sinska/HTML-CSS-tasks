@@ -1,0 +1,36 @@
+.footer-section {
+  padding: 30px 0;
+  background-color: var(--background-footer);
+}
+.footer-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+.footer-box {
+  width: 25%;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 27px;
+}
+.list-title {
+  font-size: 13px;
+  color: var(--light-color);
+  margin-bottom: 6px;
+}
+.links-list-item a {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 27px;
+  color: var(--accent-color);
+  transition: color 250ms linear;
+}
+.links-list-item a:hover {
+  color: var(--light-color);
+}
+.privat-text {
+  padding: 20px 0;
+  border-top: 1px solid var(--light-color);
+  font-size: 12px;
+  line-height: 28px;
+  font-weight: 400;
+}
